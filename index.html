@@ -30,7 +30,7 @@
                 div p{
                     font-weight: bold;
                }
-
+ 
           </style>
      </head>
      <body>
@@ -49,14 +49,21 @@
                     <h2>Sobre a Origem</h2>
                     <p>A programação na agronomia surgiu com a necessidade de automatizar processos agrícolas e analisar grandes volumes de dados. Atualmente, tecnologias como sensores, drones e inteligência artificial auxiliam produtores no monitoramento das lavouras, aumentando a produtividade e reduzindo desperdícios.</p>
                          <button>🌱 <span>0</span></button>
+                       <button>💧 <span>0</span></button>
                </div>
 
            </main>
       </body>
 <script>
-     const botao = document.querySelector
+     const botoes = document.querySelectorAll
      ("button");
-     botao.addEventListener("click", botaoClicado);
+
+     botoes.forEach(function(botao){
+          botao.addEventListener("click", botaoClicado);
+
+     }
+
+     )
 
      function botaoClicado() {
      console.log("fui clicado");
