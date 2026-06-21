@@ -62,3 +62,11 @@ h2 {
 .botao-proximo:hover {
     transform: scale(1.05);
 }
+
+section img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
