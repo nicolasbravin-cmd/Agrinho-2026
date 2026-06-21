@@ -141,3 +141,25 @@ section h2 {
     background: #f44336 !important;
     border-color: #f44336 !important;
 }
+
+.origem-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.origem-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.origem-texto {
+    flex: 1;
+}
+
+.origem-texto p {
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: justify;
+}
