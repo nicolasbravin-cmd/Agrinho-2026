@@ -109,3 +109,35 @@ section h2 {
     color: #ffd54f;
     margin-bottom: 15px;
 }
+
+.botoes-avaliacao {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.botoes-avaliacao button {
+    padding: 12px 25px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botoes-avaliacao button:hover {
+    transform: scale(1.05);
+}
+
+.ativo-like {
+    background: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+}
+
+.ativo-dislike {
+    background: #f44336 !important;
+    border-color: #f44336 !important;
+}
