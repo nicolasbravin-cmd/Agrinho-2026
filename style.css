@@ -73,3 +73,28 @@ section img {
     margin: 15px 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+
+.conteudo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.conteudo img {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.texto {
+    flex: 1;
+}
+
+.texto p {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
