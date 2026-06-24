@@ -1,28 +1,29 @@
 const btnLike = document.getElementById("like");
 const btnDislike = document.getElementById("dislike");
 
-const contadorLike = document.getElementById("contadorLike");
-const contadorDislike = document.getElementById("contadorDislike");
+if (btnLike && btnDislike) {
 
-let likes = 0;
-let dislikes = 0;
+    const contadorLike = document.getElementById("contadorLike");
+    const contadorDislike = document.getElementById("contadorDislike");
 
-btnLike.addEventListener("click", () => {
-    if (!btnLike.classList.contains("like-ativo")) {
+    let likes = 0;
+    let dislikes = 0;
+
+    btnLike.addEventListener("click", () => {
+
         likes++;
         contadorLike.textContent = likes;
 
         btnLike.classList.add("like-ativo");
         btnDislike.classList.remove("deslike-ativo");
-    }
-});
+    });
 
-btnDislike.addEventListener("click", () => {
-    if (!btnDislike.classList.contains("deslike-ativo")) {
+    btnDislike.addEventListener("click", () => {
+
         dislikes++;
         contadorDislike.textContent = dislikes;
 
         btnDislike.classList.add("deslike-ativo");
         btnLike.classList.remove("like-ativo");
-    }
-});
+    });
+}
