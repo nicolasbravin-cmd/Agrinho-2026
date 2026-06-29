@@ -91,13 +91,17 @@ ul {
     color: white;
 }
 
-input {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
+.nome {
+    text-align: center;
 }
 
-button {
+.nome input {
+    padding: 10px;
+    width: 220px;
+    font-size: 16px;
+}
+
+.nome button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
