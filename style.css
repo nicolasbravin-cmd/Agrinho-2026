@@ -25,7 +25,10 @@ main {
 }
 
 section {
-    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
 }
 
 h2 {
@@ -33,9 +36,9 @@ h2 {
 }
 
 p {
-    text-align: justify;
-    line-height: 1.6;
     font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
 }
 
 ul {
@@ -63,11 +66,12 @@ ul {
     color: #1565c0;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .avaliacao {
-    margin-top: 40px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .avaliacao button {
