@@ -9,21 +9,20 @@ if (btnLike && btnDislike) {
     let likes = 0;
     let dislikes = 0;
 
-    btnLike.addEventListener("click", () => {
-
+    btnLike.addEventListener("click", function () {
         likes++;
         contadorLike.textContent = likes;
 
-        btnLike.classList.add("like-ativo");
-        btnDislike.classList.remove("deslike-ativo");
+        btnLike.classList.add("ativo-like");
+        btnDislike.classList.remove("ativo-dislike");
     });
 
-    btnDislike.addEventListener("click", () => {
-
+    btnDislike.addEventListener("click", function () {
         dislikes++;
         contadorDislike.textContent = dislikes;
 
-        btnDislike.classList.add("deslike-ativo");
-        btnLike.classList.remove("like-ativo");
+        btnDislike.classList.add("ativo-dislike");
+        btnLike.classList.remove("ativo-like");
     });
+
 }
