@@ -69,28 +69,6 @@ ul {
     border-radius: 5px;
 }
 
-.avaliacao {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.avaliacao button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.ativo-like {
-    background-color: green;
-    color: white;
-}
-
-.ativo-dislike {
-    background-color: red;
-    color: white;
-}
-
 .nome {
     text-align: center;
 }
@@ -137,4 +115,34 @@ ul {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+}
+.avaliacao {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.avaliacao button {
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: white;
+    color: #1565c0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.avaliacao button:hover {
+    opacity: 0.9;
+}
+
+.ativo-like {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.ativo-dislike {
+    background-color: #f44336;
+    color: white;
 }
