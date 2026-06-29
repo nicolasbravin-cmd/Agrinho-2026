@@ -142,3 +142,37 @@ ul {
     background-color: red !important;
     color: white !important;
 }
+
+#modoEscuro {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: white;
+    color: #1565c0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+body.escuro {
+    background-color: #121212;
+    color: white;
+}
+
+body.escuro section {
+    background-color: #2b2b2b;
+}
+
+body.escuro h2 {
+    color: #ffd54f;
+}
+
+body.escuro .botao {
+    background-color: white;
+    color: #121212;
+}
+
+body.escuro #modoEscuro {
+    background-color: #444;
+    color: white;
+}

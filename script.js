@@ -43,3 +43,21 @@ function mostrarNome() {
     }
 
 }
+
+const botaoModo = document.getElementById("modoEscuro");
+
+if (botaoModo) {
+
+    botaoModo.addEventListener("click", function () {
+
+        document.body.classList.toggle("escuro");
+
+        if (document.body.classList.contains("escuro")) {
+            botaoModo.textContent = "☀️ Modo Claro";
+        } else {
+            botaoModo.textContent = "🌙 Modo Escuro";
+        }
+
+    });
+
+}
