@@ -84,5 +84,5 @@ function atualizarBotao() {
     } else {
         botaoModo.textContent = "Modo Escuro";
     }
-
+    
 }
