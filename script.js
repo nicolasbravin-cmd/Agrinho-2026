@@ -1,13 +1,12 @@
 const btnLike = document.getElementById("like");
 const btnDislike = document.getElementById("dislike");
+const contadorLike = document.getElementById("contadorLike");
+const contadorDislike = document.getElementById("contadorDislike");
+
+let likes = 0;
+let dislikes = 0;
 
 if (btnLike && btnDislike) {
-
-    const contadorLike = document.getElementById("contadorLike");
-    const contadorDislike = document.getElementById("contadorDislike");
-
-    let likes = 0;
-    let dislikes = 0;
 
     btnLike.addEventListener("click", function () {
 
@@ -33,13 +32,21 @@ if (btnLike && btnDislike) {
 
 function mostrarNome() {
 
-    const nome = document.getElementById("nome").value;
+    const campoNome = document.getElementById("nome");
     const mensagem = document.getElementById("mensagem");
 
-    if (nome === "") {
+    if (!campoNome || !mensagem) {
+        return;
+    }
+
+    if (campoNome.value.trim() === "") {
+
         mensagem.textContent = "Digite seu nome.";
+
     } else {
-        mensagem.textContent = "Bem-vindo, " + nome + "!";
+
+        mensagem.textContent = "Bem-vindo, " + campoNome.value + "!";
+
     }
 
 }
@@ -53,9 +60,13 @@ if (botaoModo) {
         document.body.classList.toggle("escuro");
 
         if (document.body.classList.contains("escuro")) {
+
             botaoModo.textContent = "☀️ Modo Claro";
+
         } else {
+
             botaoModo.textContent = "🌙 Modo Escuro";
+
         }
 
     });
