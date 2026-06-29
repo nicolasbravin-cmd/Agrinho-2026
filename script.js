@@ -10,19 +10,23 @@ if (btnLike && btnDislike) {
     let dislikes = 0;
 
     btnLike.addEventListener("click", function () {
+
         likes++;
         contadorLike.textContent = likes;
 
         btnLike.classList.add("ativo-like");
         btnDislike.classList.remove("ativo-dislike");
+
     });
 
     btnDislike.addEventListener("click", function () {
+
         dislikes++;
         contadorDislike.textContent = dislikes;
 
         btnDislike.classList.add("ativo-dislike");
         btnLike.classList.remove("ativo-like");
+
     });
 
 }
@@ -30,17 +34,12 @@ if (btnLike && btnDislike) {
 function mostrarNome() {
 
     const nome = document.getElementById("nome").value;
-
     const mensagem = document.getElementById("mensagem");
 
     if (nome === "") {
-
-        mensagem.textContent = "Digite um nome.";
-
+        mensagem.textContent = "Digite seu nome.";
     } else {
-
         mensagem.textContent = "Bem-vindo, " + nome + "!";
-
     }
 
 }

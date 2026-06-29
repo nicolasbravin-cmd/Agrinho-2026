@@ -122,27 +122,23 @@ ul {
 }
 
 .avaliacao button {
-    padding: 12px 25px;
-    margin: 10px;
     background-color: white;
     color: #1565c0;
-    border: none;
-    border-radius: 8px;
+    padding: 12px 25px;
+    margin: 10px;
     font-size: 16px;
     font-weight: bold;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-.avaliacao button:hover {
-    opacity: 0.9;
-}
-
 .ativo-like {
-    background-color: #4CAF50;
+    background-color: green;
     color: white;
 }
 
 .ativo-dislike {
-    background-color: #f44336;
+    background-color: red;
     color: white;
 }
