@@ -26,3 +26,21 @@ if (btnLike && btnDislike) {
     });
 
 }
+
+function mostrarNome() {
+
+    const nome = document.getElementById("nome").value;
+
+    const mensagem = document.getElementById("mensagem");
+
+    if (nome === "") {
+
+        mensagem.textContent = "Digite um nome.";
+
+    } else {
+
+        mensagem.textContent = "Bem-vindo, " + nome + "!";
+
+    }
+
+}
