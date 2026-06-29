@@ -106,3 +106,10 @@ ul {
     font-size: 16px;
     cursor: pointer;
 }
+#mensagem {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #ffd54f;
+    font-weight: bold;
+}
