@@ -61,11 +61,11 @@ if (botaoModo) {
 
         if (document.body.classList.contains("escuro")) {
 
-            botaoModo.textContent = "☀️ Modo Claro";
+            botaoModo.textContent = " Modo Claro";
 
         } else {
 
-            botaoModo.textContent = "🌙 Modo Escuro";
+            botaoModo.textContent = " Modo Escuro";
 
         }
 
