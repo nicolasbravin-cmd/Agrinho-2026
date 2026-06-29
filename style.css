@@ -113,3 +113,28 @@ ul {
     color: #ffd54f;
     font-weight: bold;
 }
+.nome input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ffd54f;
+    border-radius: 8px;
+    outline: none;
+}
+.nome input {
+    width: 350px;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ffd54f;
+    border-radius: 8px;
+}
+.nome button {
+    padding: 12px 20px;
+    background-color: #ffd54f;
+    color: #1565c0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
