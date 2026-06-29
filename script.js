@@ -53,7 +53,15 @@ function mostrarNome() {
 
 const botaoModo = document.getElementById("modoEscuro");
 
+if (localStorage.getItem("tema") === "escuro") {
+    document.body.classList.add("escuro");
+}
+
 if (botaoModo) {
+
+    if (document.body.classList.contains("escuro")) {
+        botaoModo.textContent = " Modo Claro";
+    }
 
     botaoModo.addEventListener("click", function () {
 
@@ -61,10 +69,12 @@ if (botaoModo) {
 
         if (document.body.classList.contains("escuro")) {
 
+            localStorage.setItem("tema", "escuro");
             botaoModo.textContent = " Modo Claro";
 
         } else {
 
+            localStorage.setItem("tema", "claro");
             botaoModo.textContent = " Modo Escuro";
 
         }
