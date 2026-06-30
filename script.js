@@ -37,19 +37,13 @@ function mostrarNome() {
 
     if (!campoNome || !mensagem) {
         return;
-    }
-
-    if (campoNome.value.trim() === "") {
-
-        mensagem.textContent = "Digite seu nome.";
-
-    } else {
-
+     }
+     if (campoNome.value.trim() === "") {
+         mensagem.textContent = "Digite seu nome.";
+     } else {
         mensagem.textContent = "Bem-vindo, " + campoNome.value + "!";
-
-    }
-
-}
+     }
+ }
 
 const botaoModo = document.getElementById("modoEscuro");
 
@@ -72,9 +66,7 @@ if (botaoModo) {
         }
 
         atualizarBotao();
-
-    });
-
+     });
 }
 
 function atualizarBotao() {
@@ -84,5 +76,4 @@ function atualizarBotao() {
     } else {
         botaoModo.textContent = "Modo Escuro";
     }
-    
 }
